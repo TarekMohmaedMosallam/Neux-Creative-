@@ -1,0 +1,55 @@
+:host {
+  --primary-color: #333;
+  --secondary-color: #ffcc00;
+  --accent-color: #ff6b00;
+  --light-color: #f4f4f4;
+  --dark-color: #222;
+  --text-color: #333;
+  --text-light: #777;
+}
+
+label{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+h4{
+      font-size:small ;
+      font-weight: bold;
+}
+p{
+      font-size: small;
+      unicode-bidi: isolate;
+}
+.line::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 70px;
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+}
+
+
+form {
+background-color: #f4f4f4;
+}
+
+button{
+  transition: 0.2s ease-in-out;
+}
+button:hover{
+  background-color: #222 !important;
+  color: white !important;
+}
+
+.social a {
+  background-color: #222 !important;
+  color: white !important;
+  transition: 0.2s ease-in-out;
+}
+
+.social a:hover{
+   background-color: #ffcc00!important;
+  color: #222 !important;
+}

@@ -1,0 +1,18 @@
+:host {
+  --primary-color: #333;
+  --secondary-color: #ffcc00;
+  --accent-color: #ff6b00;
+  --light-color: #f4f4f4;
+  --dark-color: #222;
+  --text-color: #333;
+  --text-light: #777;
+}
+
+.line::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 70px;
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+}

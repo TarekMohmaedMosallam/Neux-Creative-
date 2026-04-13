@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+:host {
+    --primary-color: #333;
+    --secondary-color: #ffcc00;
+    --accent-color: #ff6b00;
+    --light-color: #f4f4f4;
+    --dark-color: #222;
+    --text-color: #333;
+    --text-light: #777;
+}
+
+p{
+  color: var(--light-color);
+
+}
+nav {
+  background-color: var(--text-light) !important;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  padding: 2px 0;
+  transition: padding 0.3s ease;
+}
+
+nav.scrolled {
+  padding: 2px 0;
+}
+ li > a{
+  position: relative;
+  color: red;
+  font-size: 14px;
+}
+
+ul li  a{
+
+  color: var(--light-color);
+}
+li >a::before{
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #ffcc00;
+  transition: 0.3s all;
+}
+ li >a:hover::before{
+  width: 100%;
+
+ }
+
+ .line{
+  height: 3px;
+  color: yellow;
+ }
+
+ .navbar-logo {
+  width: 8rem;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 992px) {
+  .navbar-logo {
+    width: 12rem;
+    margin-top: -40px;
+    margin-bottom: -40px;
+  }
+}
+
+ /* Anumated Custom Hamburger  */
+
+.navbar-toggler {
+
+    border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+/* Lines of the Toggler */
+.toggler-icon{
+    width: 30px;
+    height: 3px;
+    background-color: #ffcc00;
+    display: block;
+    transition: all 0.2s;
+}
+
+/* Adds Space between the lines */
+.middle-bar{
+    margin: 5px auto;
+}
+
+/* State when navbar is opened (START) */
+.navbar-toggler .top-bar {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+    transform: translateY(-8px) rotate(-45deg);
+}
+/* State when navbar is opened (END) */
+
+/* State when navbar is collapsed (START) */
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+/* State when navbar is collapsed (END) */
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: black;
+}

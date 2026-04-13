@@ -1,0 +1,12 @@
+.line::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 70px;
+  background-color: #ffcc00;
+  margin: 0 auto;
+}
+
+p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
